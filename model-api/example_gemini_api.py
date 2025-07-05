@@ -15,7 +15,8 @@ client = genai.Client(api_key=api_key)
 
 response = client.models.generate_content(
     model="gemini-2.5-flash",
-    contents="Explain how Large Language Models work in a few words",
+    # contents="Explain how Large Language Models work in a few words",
+    contents="Who won the world cup in 2011",
 )
 
 print(response.text)
